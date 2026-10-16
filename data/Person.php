@@ -7,6 +7,12 @@ class Person
     var ?string $address = null; //ini tanda bahwa address boleh null
     var $country = "Indonesia"; //ini adalah default value
 
+    function __construct(string $name, ?string $address){ //jadi ketika membuat construction, kita wajib mengisi semua parameter ketika memanggil menggunakan object. karena jika tidak memanggil maka akan error.
+        $this->name = $name;
+        $this->address = $address;
+
+    }
+
     function sayHello (?string $name){
 
     if (is_null($name)){
