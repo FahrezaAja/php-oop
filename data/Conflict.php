@@ -5,6 +5,17 @@ namespace Data\One { //membuat namespace agar dapat memiliki class dengan nama y
     {
         
     }
+
+    class Sample
+    {
+
+    }
+    class Dummy
+    {
+        
+    }
+
+
 }
 
 namespace Data\Two {
