@@ -7,8 +7,9 @@ class Person
     var ?string $address = null; //ini tanda bahwa address boleh null
     var $country = "Indonesia"; //ini adalah default value
 
+    //ini adalah constructor, jadi ketika membuat object maka akan otomatis memanggil function ini. dan ini akan otomatis dipanggil ketika program dijalankan.
     function __construct(string $name, ?string $address){ //jadi ketika membuat construction, kita wajib mengisi semua parameter ketika memanggil menggunakan object. karena jika tidak memanggil maka akan error.
-        $this->name = $name;
+        $this->name = $name; 
         $this->address = $address;
 
     }
@@ -27,8 +28,8 @@ class Person
         echo "AUTHOR : " . self::AUTHOR . PHP_EOL;
     }
 
-    function __destruct(){
-        echo "Object Person $this->name is destroyed" . PHP_EOL;
-    }
+    function __destruct(){ //ini adalah destructor, jadi ketika object dihapus maka akan memanggil function ini. dan ini akan otomatis dipanggil ketika program selesai dijalankan.
+        echo "Object Person $this->name is destroyed" . PHP_EOL; 
+    } 
 
 }
